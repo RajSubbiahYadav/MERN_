@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register Form</title>
+</head>
+
+<body>
+    <!-- <center> -->
+    <h1>Race Registration!</h1>
+    <form action="">
+        <div>
+            <label for="FN">First Name:</label>
+            <input type="text" name="First Name" id="FN" required>
+            <label for="LN">Last Name:</label>
+            <input type="text" name="Last Name" id="LN" required>
+        </div>
+        <p>Select a Race:</p>
+        <div>
+            <input type="radio" name="Race Type" id="FR" value="Fun_Run">
+            <label for="FR">Fun Run 5k</label>
+        </div>
+        <div>
+            <input type="radio" name="Race Type" id="HM" value="Half_Marathon">
+            <label for="HM">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="Race Type" id="FM" value="Full_Marathon">
+            <label for="FM">Full Marathon</label>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" required>
+            <label for="PW">Password:</label>
+            <input type="password" id="PW" minlength="5" maxlength="8" name="password" required>
+        </div>
+        <div>
+            <label for="AGE">Select Age Group:</label>
+            <select name="AGE" id="AGE">
+                <option value="Teenage">Under 18</option>
+                <option value="YoungMEN">19-30</option>
+                <option value="MAN">31-50</option>
+                <option value="Senior">50+</option>
+            </select>
+        </div>
+        <button type="submit">Register!</button>
+    </form>
+    <!-- </center> -->
+</body>
+
+</html>
+<!-- 
+http://127.0.0.1:5500/DATA?First+Name=RAJ&Last+Name=YADAV&Race+Type=Fun_Run&Email=rajuyadav93383%40gmail.com&password=12345&AGE=MAN -->
